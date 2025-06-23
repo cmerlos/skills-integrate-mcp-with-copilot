@@ -35,10 +35,51 @@ main {
   justify-content: center;
 }
 
-@media (min-width: 768px) {
-  main {
-    grid-template-columns: 2fr 1fr;
-  }
+/* Toolbar styles */
+#activity-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#activity-toolbar label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#activity-toolbar select,
+#activity-toolbar input[type="text"] {
+  padding: 5px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+#activity-toolbar input[type="text"] {
+  min-width: 180px;
+}
+
+#activity-toolbar button {
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: none;
+  background: #cddc39;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#activity-toolbar button:hover {
+  background: #aed581;
+}
+
+/* Adjust activities section for toolbar */
+#activities-container {
+  margin-bottom: 20px;
 }
 
 section {
